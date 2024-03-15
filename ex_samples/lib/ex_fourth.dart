@@ -3,15 +3,15 @@
 //3. where() method - filter elements based on a condition
 //4. use of any() function
 //5. use of splitMapJoin() method
-
+//6. use of fold() function
 void main() {
-  // List<String> charList = ['A', 'B', 'C'];
+  List<String> charList = ['A', 'B', 'C'];
 
-  // String concatenatedString = charList.join('');
-  // String stringWithSpace = concatenatedString.split('').join(' ');
-  // print(concatenatedString);
-  // print('=======================================');
-  // print('String with space - $stringWithSpace');
+  String concatenatedString = charList.join('');
+  String stringWithSpace = concatenatedString.split('').join(' * ');
+  print('String with join method $concatenatedString');
+  print('==============================');
+  print('String with space - $stringWithSpace');
 
   // print('=======================================');
   // print('2.');
@@ -91,15 +91,20 @@ void main() {
   //=======================================================
   //6.
 
-  final numbers = <double>[10, 2, 5, 0.5];
-  const initialValue = 100.0;
-  final result = numbers.fold<double>(initialValue, (previousValue, element) {
-    print('previous value = $previousValue');
-    print('element = $element');
-    return (previousValue + element);
-  });
+  // final numbers = <double>[
+  //   10,
+  //   2,
+  //   5,
+  //   0.5,
+  // ];
+  // const initialValue = 100.0;
+  // final result = numbers.fold<double>(initialValue, (previousValue, element) {
+  //   print('previous value = $previousValue');
+  //   print('element = $element');
+  //   return (previousValue + element);
+  // });
 
-  print('use of fold() function');
-  print('===============================');
-  print(result);
+  // print('use of fold() function');
+  // print('===============================');
+  // print(result);
 }
