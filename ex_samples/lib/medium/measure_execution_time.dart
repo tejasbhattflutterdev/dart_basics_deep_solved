@@ -7,10 +7,13 @@ void main() {
 
 void measureExecutionTime(Function fn) {
   final stopWatch = Stopwatch()..start();
-  myMethod();
+  //myMethod();
+  fn();
   stopWatch.stop();
   print('Execution Time = ${stopWatch.elapsed}');
-  print('Execution Time(in milli seconds) = ${stopWatch.elapsedMilliseconds}');
+  print(
+    'Execution Time(in milli seconds) = ${stopWatch.elapsedMilliseconds}',
+  );
 }
 
 void myMethod() {

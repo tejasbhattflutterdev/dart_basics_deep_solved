@@ -8,7 +8,7 @@ void main() {
 //  int month = int.tryParse(stdin.readLineSync()!) ?? DateTime.now().month;
 
   int year = 2024;
-  int month = 2;
+  int month = 1;
 
   final date = DateTime(year, month, 1);
   final lastDay = DateTime(year, month + 1, 0);
