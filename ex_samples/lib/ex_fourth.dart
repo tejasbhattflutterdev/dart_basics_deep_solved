@@ -5,13 +5,13 @@
 //5. use of splitMapJoin() method
 //6. use of fold() function
 void main() {
-  List<String> charList = ['A', 'B', 'C'];
+  // List<String> charList = ['A', 'B', 'C'];
 
-  String concatenatedString = charList.join('');
-  String stringWithSpace = concatenatedString.split('').join(' * ');
-  print('String with join method $concatenatedString');
-  print('==============================');
-  print('String with space - $stringWithSpace');
+  // String concatenatedString = charList.join('');
+  // String stringWithSpace = concatenatedString.split('').join(' * ');
+  // print('String with join method $concatenatedString');
+  // print('==============================');
+  // print('String with space - $stringWithSpace');
 
   // print('=======================================');
   // print('2.');
@@ -25,25 +25,26 @@ void main() {
   // //=====================================================
   // //3.
 
-  // List<String> myStringFirst = [
-  //   'ABC',
-  //   'CDEF',
-  //   'GHI',
-  // ];
-  // String searchTerm = 'c';
-  // String lowerCaseSearchTerm = searchTerm.toLowerCase();
-  // List<String> mySecondString = myStringFirst.where((element) {
-  //   return element.contains(lowerCaseSearchTerm.toUpperCase());
-  // }).toList();
+  List<String> myStringFirst = [
+    'ABC',
+    'CDEF',
+    'GHI',
+    'c',
+  ];
+  String searchTerm = 'c';
+  String lowerCaseSearchTerm = searchTerm.toLowerCase();
+  List<String> mySecondString = myStringFirst.where((element) {
+    return element.toLowerCase().contains(lowerCaseSearchTerm);
+  }).toList();
 
-  // print('============================================');
-  // print('use of where function of List<String>');
-  // print(mySecondString);
-  // if (mySecondString.isNotEmpty) {
-  //   print('String found in List =$mySecondString');
-  // } else {
-  //   print('Not Found');
-  // }
+  print('============================================');
+  print('use of where function of List<String>');
+  print(mySecondString);
+  if (mySecondString.isNotEmpty) {
+    print('String found in List =$mySecondString');
+  } else {
+    print('Not Found');
+  }
   // //======================================================
   // //4.
 
